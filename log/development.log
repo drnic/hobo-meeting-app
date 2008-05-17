@@ -1,0 +1,1872 @@
+  [4;36;1mSQL (0.036329)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing FrontController#index (for 127.0.0.1 at 2008-05-17 19:48:47) [GET]
+  Session ID: 998b5cb135c75f78244bc573e449b08f
+  Parameters: {"action"=>"index", "controller"=>"front"}
+Rendering front/index
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/core.dryml in 0.01s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_support.dryml in 0.01s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_document_tags.dryml in 0.17s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml in 0.71s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_editing.dryml in 0.18s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_forms.dryml in 0.08s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_navigation.dryml in 0.14s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_plus.dryml in 0.06s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_generics.dryml in 0.14s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid.dryml in 2.05s
+  DRYML: Compiled /app/views/taglibs/themes/clean/clean.dryml in 0.06s
+  DRYML: Compiled /app/views/taglibs/application.dryml in 2.13s
+  DRYML: Compiled app/views/front/index.dryml in 2.22s
+Completed in 2.35068 (0 reqs/sec) | Rendering: 2.34907 (99%) | DB: 0.03633 (1%) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.000295)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000102)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.010182)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000270)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000212)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.156116)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.014809)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.000204)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to CreateMeeting (1)
+  [4;36;1mSQL (0.006146)[0m   [0;1mCREATE TABLE meetings ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "body" text DEFAULT NULL, "date" date DEFAULT NULL, "start_time" datetime DEFAULT NULL, "end_time" datetime DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;35;1mSQL (0.001487)[0m   [0mCREATE TABLE users ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "crypted_password" varchar(40) DEFAULT NULL, "salt" varchar(40) DEFAULT NULL, "remember_token" varchar(255) DEFAULT NULL, "remember_token_expires_at" datetime DEFAULT NULL, "username" varchar(255) DEFAULT NULL, "administrator" boolean DEFAULT 'f', "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.000944)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;35;1mSQL (0.000250)[0m   [0mSELECT * FROM schema_info[0m
+  [4;36;1mSQL (0.000250)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000105)[0m   [0mPRAGMA index_list(meetings)[0m
+  [4;36;1mSQL (0.000054)[0m   [0;1mPRAGMA index_list(users)[0m
+  [4;36;1mSQL (0.000957)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000235)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000699)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing FrontController#index (for 127.0.0.1 at 2008-05-17 19:56:45) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNjhiMWUyYjExZTMzODQ3ZDAzZDc5MGUwYzUwN2Y0%0AZmEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--4ad393cdeb87d28fb4492db1acac7c27fcdd07d5
+  Parameters: {"action"=>"index", "controller"=>"front"}
+Rendering front/index
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/core.dryml in 0.01s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_support.dryml in 0.14s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_document_tags.dryml in 0.04s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml in 0.62s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_editing.dryml in 0.21s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_forms.dryml in 0.10s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_navigation.dryml in 0.15s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_plus.dryml in 0.05s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_generics.dryml in 0.19s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid.dryml in 2.03s
+  DRYML: Compiled /app/views/taglibs/themes/clean/clean.dryml in 0.01s
+  DRYML: Compiled /app/views/taglibs/application.dryml in 2.04s
+  DRYML: Compiled app/views/front/index.dryml in 2.09s
+Completed in 2.10656 (0 reqs/sec) | Rendering: 2.10499 (99%) | DB: 0.00070 (0%) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.000585)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000570)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.005308)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing FrontController#index (for 127.0.0.1 at 2008-05-17 19:58:03) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNjhiMWUyYjExZTMzODQ3ZDAzZDc5MGUwYzUwN2Y0%0AZmEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--4ad393cdeb87d28fb4492db1acac7c27fcdd07d5
+  Parameters: {"action"=>"index", "controller"=>"front"}
+Rendering front/index
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/core.dryml in 0.01s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_support.dryml in 0.01s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_document_tags.dryml in 0.03s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml in 1.05s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_editing.dryml in 0.11s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_forms.dryml in 0.15s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_navigation.dryml in 0.26s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_plus.dryml in 0.10s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_generics.dryml in 0.19s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid.dryml in 2.18s
+  DRYML: Compiled /app/views/taglibs/themes/clean/clean.dryml in 0.01s
+  DRYML: Compiled /app/views/taglibs/application.dryml in 2.21s
+  DRYML: Compiled app/views/front/index.dryml in 2.28s
+  [4;35;1mMeeting Load (0.000164)[0m   [0mSELECT * FROM meetings LIMIT 6[0m
+Completed in 2.30841 (0 reqs/sec) | Rendering: 2.30681 (99%) | DB: 0.00547 (0%) | 200 OK [http://localhost/]
+
+
+Processing MeetingsController#index (for 127.0.0.1 at 2008-05-17 19:58:09) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNjhiMWUyYjExZTMzODQ3ZDAzZDc5MGUwYzUwN2Y0%0AZmEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--4ad393cdeb87d28fb4492db1acac7c27fcdd07d5
+  Parameters: {"action"=>"index", "controller"=>"meetings"}
+  [4;36;1mMeeting Load (0.000385)[0m   [0;1mSELECT * FROM meetings LIMIT 30 OFFSET 0[0m
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/core.dryml in 0.01s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_support.dryml in 0.01s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_document_tags.dryml in 0.06s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml in 0.86s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_editing.dryml in 0.07s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_forms.dryml in 0.33s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_navigation.dryml in 0.06s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_plus.dryml in 0.16s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_generics.dryml in 0.18s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid.dryml in 2.04s
+  DRYML: Compiled (from cache) /app/views/taglibs/themes/clean/clean.dryml in 0.01s
+  DRYML: Compiled (from cache) /app/views/taglibs/application.dryml in 2.05s
+  DRYML: Compiled meetings/[tag-page] in 2.09s
+  [4;35;1mSQL (0.000368)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Completed in 2.15176 (0 reqs/sec) | Rendering: 2.14850 (99%) | DB: 0.00038 (0%) | 200 OK [http://localhost/meetings]
+
+
+Processing MeetingsController#index (for 127.0.0.1 at 2008-05-17 19:58:30) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNjhiMWUyYjExZTMzODQ3ZDAzZDc5MGUwYzUwN2Y0%0AZmEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--4ad393cdeb87d28fb4492db1acac7c27fcdd07d5
+  Parameters: {"action"=>"index", "controller"=>"meetings"}
+  [4;36;1mMeeting Load (0.000324)[0m   [0;1mSELECT * FROM meetings LIMIT 30 OFFSET 0[0m
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/core.dryml in 0.01s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_support.dryml in 0.01s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_document_tags.dryml in 0.29s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml in 0.65s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_editing.dryml in 0.06s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_forms.dryml in 0.27s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_navigation.dryml in 0.10s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_plus.dryml in 0.06s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_generics.dryml in 0.31s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid.dryml in 2.05s
+  DRYML: Compiled (from cache) /app/views/taglibs/themes/clean/clean.dryml in 0.00s
+  DRYML: Compiled (from cache) /app/views/taglibs/application.dryml in 2.05s
+  DRYML: Compiled meetings/[tag-page] in 2.10s
+  [4;35;1mSQL (0.000342)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Completed in 2.18384 (0 reqs/sec) | Rendering: 2.18136 (99%) | DB: 0.00032 (0%) | 200 OK [http://localhost/meetings]
+
+
+Processing MeetingsController#new (for 127.0.0.1 at 2008-05-17 19:58:35) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNjhiMWUyYjExZTMzODQ3ZDAzZDc5MGUwYzUwN2Y0%0AZmEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--4ad393cdeb87d28fb4492db1acac7c27fcdd07d5
+  Parameters: {"action"=>"new", "controller"=>"meetings"}
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/core.dryml in 0.01s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_support.dryml in 0.11s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_document_tags.dryml in 0.21s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml in 0.66s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_editing.dryml in 0.16s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_forms.dryml in 0.30s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_navigation.dryml in 0.06s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_plus.dryml in 0.04s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_generics.dryml in 0.29s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid.dryml in 2.07s
+  DRYML: Compiled (from cache) /app/views/taglibs/themes/clean/clean.dryml in 0.00s
+  DRYML: Compiled (from cache) /app/views/taglibs/application.dryml in 2.07s
+  DRYML: Compiled meetings/[tag-page] in 2.08s
+  [4;36;1mSQL (0.000471)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Completed in 2.26208 (0 reqs/sec) | Rendering: 2.25625 (99%) | DB: 0.00000 (0%) | 200 OK [http://localhost/meetings/new]
+
+
+Processing MeetingsController#index (for 127.0.0.1 at 2008-05-17 19:58:49) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNjhiMWUyYjExZTMzODQ3ZDAzZDc5MGUwYzUwN2Y0%0AZmEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--4ad393cdeb87d28fb4492db1acac7c27fcdd07d5
+  Parameters: {"action"=>"index", "controller"=>"meetings"}
+  [4;35;1mMeeting Load (0.000335)[0m   [0mSELECT * FROM meetings LIMIT 30 OFFSET 0[0m
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/core.dryml in 0.01s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_support.dryml in 0.01s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_document_tags.dryml in 0.04s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml in 0.59s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_editing.dryml in 0.08s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_forms.dryml in 0.53s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_navigation.dryml in 0.07s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_plus.dryml in 0.18s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_generics.dryml in 0.07s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid.dryml in 2.07s
+  DRYML: Compiled (from cache) /app/views/taglibs/themes/clean/clean.dryml in 0.00s
+  DRYML: Compiled (from cache) /app/views/taglibs/application.dryml in 2.07s
+  DRYML: Compiled meetings/[tag-page] in 2.08s
+  [4;36;1mSQL (0.000384)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Completed in 2.12819 (0 reqs/sec) | Rendering: 2.12570 (99%) | DB: 0.00033 (0%) | 200 OK [http://localhost/meetings]
+  [4;35;1mSQL (0.000466)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing UsersController#signup (for 127.0.0.1 at 2008-05-17 19:59:11) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNjhiMWUyYjExZTMzODQ3ZDAzZDc5MGUwYzUwN2Y0%0AZmEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--4ad393cdeb87d28fb4492db1acac7c27fcdd07d5
+  Parameters: {"action"=>"signup", "controller"=>"users"}
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/core.dryml in 0.02s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_support.dryml in 0.07s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_document_tags.dryml in 0.07s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml in 0.72s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_editing.dryml in 0.34s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_forms.dryml in 0.14s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_navigation.dryml in 0.24s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_plus.dryml in 0.25s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_generics.dryml in 0.08s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid.dryml in 2.25s
+  DRYML: Compiled (from cache) /app/views/taglibs/themes/clean/clean.dryml in 0.00s
+  DRYML: Compiled (from cache) /app/views/taglibs/application.dryml in 2.25s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_user_pages.dryml in 0.30s
+  DRYML: Compiled users/[tag-page] in 2.59s
+Completed in 2.67795 (0 reqs/sec) | Rendering: 2.66814 (99%) | DB: 0.00047 (0%) | 200 OK [http://localhost/signup]
+  [4;36;1mSQL (0.000468)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing UsersController#signup (for 127.0.0.1 at 2008-05-17 19:59:21) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNjhiMWUyYjExZTMzODQ3ZDAzZDc5MGUwYzUwN2Y0%0AZmEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--4ad393cdeb87d28fb4492db1acac7c27fcdd07d5
+  Parameters: {"user"=>{"password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "login"=>"drnic"}, "page_path"=>"users/signup", "action"=>"signup", "authenticity_token"=>"9d9bee838232dc3688d1e1002b93b2cda434f4a1", "controller"=>"users"}
+
+
+NoMethodError (undefined method `with_acting_user' for #<User:0x21ea468>):
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/attribute_methods.rb:205:in `method_missing'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/model.rb:361:in `user_save_changes'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/model.rb:113:in `user_create'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/user_controller.rb:64:in `hobo_signup'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/user_controller.rb:22:in `signup'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+  [4;35;1mSQL (0.019885)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing UsersController#signup (for 127.0.0.1 at 2008-05-17 20:08:25) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNjhiMWUyYjExZTMzODQ3ZDAzZDc5MGUwYzUwN2Y0%0AZmEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--4ad393cdeb87d28fb4492db1acac7c27fcdd07d5
+  Parameters: {"user"=>{"password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "login"=>"drnic"}, "page_path"=>"users/signup", "action"=>"signup", "authenticity_token"=>"9d9bee838232dc3688d1e1002b93b2cda434f4a1", "controller"=>"users"}
+
+
+NoMethodError (undefined method `with_acting_user' for #<User:0x2354434>):
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/attribute_methods.rb:205:in `method_missing'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/model.rb:361:in `user_save_changes'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/model.rb:113:in `user_create'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/user_controller.rb:64:in `hobo_signup'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/user_controller.rb:22:in `signup'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+  [4;36;1mSQL (0.000596)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing UsersController#signup (for 127.0.0.1 at 2008-05-17 20:08:40) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNjhiMWUyYjExZTMzODQ3ZDAzZDc5MGUwYzUwN2Y0%0AZmEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--4ad393cdeb87d28fb4492db1acac7c27fcdd07d5
+  Parameters: {"user"=>{"password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "login"=>"drnic"}, "page_path"=>"users/signup", "action"=>"signup", "authenticity_token"=>"9d9bee838232dc3688d1e1002b93b2cda434f4a1", "controller"=>"users"}
+
+
+NoMethodError (undefined method `with_acting_user' for #<User:0x24cbf88>):
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/attribute_methods.rb:205:in `method_missing'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/model.rb:371:in `user_save_changes'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/model.rb:113:in `user_create'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/user_controller.rb:64:in `hobo_signup'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/user_controller.rb:22:in `signup'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+  [4;35;1mSQL (0.000505)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing UsersController#signup (for 127.0.0.1 at 2008-05-17 20:12:56) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNjhiMWUyYjExZTMzODQ3ZDAzZDc5MGUwYzUwN2Y0%0AZmEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--4ad393cdeb87d28fb4492db1acac7c27fcdd07d5
+  Parameters: {"user"=>{"password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "login"=>"drnic"}, "page_path"=>"users/signup", "action"=>"signup", "authenticity_token"=>"9d9bee838232dc3688d1e1002b93b2cda434f4a1", "controller"=>"users"}
+
+
+NoMethodError (undefined method `with_acting_user' for #<User:0x274c0b4>):
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/attribute_methods.rb:205:in `method_missing'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/model.rb:371:in `user_save_changes'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/model.rb:113:in `user_create'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/user_controller.rb:64:in `hobo_signup'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/user_controller.rb:22:in `signup'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+  [4;36;1mSQL (0.000581)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing UsersController#signup (for 127.0.0.1 at 2008-05-17 20:13:21) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNjhiMWUyYjExZTMzODQ3ZDAzZDc5MGUwYzUwN2Y0%0AZmEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--4ad393cdeb87d28fb4492db1acac7c27fcdd07d5
+  Parameters: {"user"=>{"password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "login"=>"drnic"}, "page_path"=>"users/signup", "action"=>"signup", "authenticity_token"=>"9d9bee838232dc3688d1e1002b93b2cda434f4a1", "controller"=>"users"}
+  [4;35;1mUser Load (0.009185)[0m   [0mSELECT * FROM users WHERE (LOWER(users.username) = 'drnic') LIMIT 1[0m
+  [4;36;1mSQL (0.000231)[0m   [0;1mSELECT count(*) AS count_all FROM users [0m
+  [4;35;1mUser Create (0.000393)[0m   [0mINSERT INTO users ("salt", "updated_at", "crypted_password", "remember_token_expires_at", "username", "administrator", "remember_token", "created_at") VALUES('94360887dcfbc6127510a1ba8d39865685f435c0', '2008-05-17 20:13:21', '4c9cb9f295c343af8077d348715963decd1b8a9d', NULL, 'drnic', 't', NULL, '2008-05-17 20:13:21')[0m
+Redirected to http://localhost:3000
+Completed in 0.02662 (37 reqs/sec) | DB: 0.01039 (39%) | 302 Found [http://localhost/signup]
+
+
+Processing FrontController#index (for 127.0.0.1 at 2008-05-17 20:13:21) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlNjhiMWUyYjExZTMzODQ3ZDAzZDc5MGUwYzUwN2Y0%0AZmE6CXVzZXIiC3VzZXJfMToOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiG1RoYW5r%0AcyBmb3Igc2lnbmluZyB1cCEGOgpAdXNlZHsGOwlU--50f404a3dbc27e2c463eda8fab2988f00788b2ae
+  Parameters: {"action"=>"index", "controller"=>"front"}
+Rendering front/index
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/core.dryml in 0.02s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_support.dryml in 0.01s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_document_tags.dryml in 0.11s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml in 1.09s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_editing.dryml in 0.16s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_forms.dryml in 0.28s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_navigation.dryml in 0.14s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_plus.dryml in 0.06s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_generics.dryml in 0.31s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid.dryml in 2.60s
+  DRYML: Compiled /app/views/taglibs/themes/clean/clean.dryml in 0.01s
+  DRYML: Compiled /app/views/taglibs/application.dryml in 2.62s
+  DRYML: Compiled app/views/front/index.dryml in 2.71s
+  [4;36;1mSQL (0.000696)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mUser Load (0.000303)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+  [4;36;1mMeeting Load (0.000145)[0m   [0;1mSELECT * FROM meetings LIMIT 6[0m
+Completed in 2.83666 (0 reqs/sec) | Rendering: 2.83422 (99%) | DB: 0.00114 (0%) | 200 OK [http://localhost/]
+
+
+Processing MeetingsController#new (for 127.0.0.1 at 2008-05-17 20:13:57) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlNjhiMWUyYjExZTMzODQ3ZDAzZDc5MGUwYzUwN2Y0%0AZmE6CXVzZXIiC3VzZXJfMToOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--d4d420d43daa1d17a1eba4d150f49ae8a05b0e3d
+  Parameters: {"action"=>"new", "controller"=>"meetings"}
+  [4;35;1mSQL (0.000321)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mUser Load (0.000281)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/core.dryml in 0.01s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_support.dryml in 0.01s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_document_tags.dryml in 0.07s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml in 0.90s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_editing.dryml in 0.21s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_forms.dryml in 0.27s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_navigation.dryml in 0.14s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_plus.dryml in 0.27s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_generics.dryml in 0.17s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid.dryml in 2.49s
+  DRYML: Compiled (from cache) /app/views/taglibs/themes/clean/clean.dryml in 0.00s
+  DRYML: Compiled (from cache) /app/views/taglibs/application.dryml in 2.49s
+  DRYML: Compiled meetings/[tag-page] in 2.51s
+Completed in 2.80418 (0 reqs/sec) | Rendering: 2.70119 (96%) | DB: 0.00060 (0%) | 200 OK [http://localhost/meetings/new]
+
+
+Processing MeetingsController#create (for 127.0.0.1 at 2008-05-17 20:14:35) [POST]
+  Session ID: BAh7CToMY3NyZl9pZCIlNjhiMWUyYjExZTMzODQ3ZDAzZDc5MGUwYzUwN2Y0%0AZmE6CXVzZXIiC3VzZXJfMToOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--d4d420d43daa1d17a1eba4d150f49ae8a05b0e3d
+  Parameters: {"page_path"=>"meetings/new", "authenticity_token"=>"9d9bee838232dc3688d1e1002b93b2cda434f4a1", "action"=>"create", "meeting"=>{"title"=>"Brisbane Ruby meeting", "body"=>"Sessions:\r\n\r\n* Hobo by Dr Nic\r\n* ...", "date"=>{"month"=>"5", "day"=>"17", "year"=>"2008"}, "start_time"=>{"month"=>"5", "minute"=>"14", "hour"=>"20", "day"=>"17", "year"=>"2008"}, "end_time"=>{"month"=>"5", "minute"=>"14", "hour"=>"20", "day"=>"17", "year"=>"2008"}}, "controller"=>"meetings"}
+  [4;35;1mSQL (0.000284)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mUser Load (0.000268)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+  [4;35;1mMeeting Create (0.000440)[0m   [0mINSERT INTO meetings ("updated_at", "body", "title", "date", "created_at", "end_time", "start_time") VALUES('2008-05-17 20:14:35', 'Sessions:
+
+* Hobo by Dr Nic
+* ...', 'Brisbane Ruby meeting', '2008-05-17', '2008-05-17 20:14:35', '2008-05-17 20:14:00', '2008-05-17 20:14:00')[0m
+Redirected to http://localhost:3000/meetings/1
+Completed in 0.02195 (45 reqs/sec) | DB: 0.00099 (4%) | 302 Found [http://localhost/meetings]
+
+
+Processing MeetingsController#show (for 127.0.0.1 at 2008-05-17 20:14:35) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlNjhiMWUyYjExZTMzODQ3ZDAzZDc5MGUwYzUwN2Y0%0AZmE6CXVzZXIiC3VzZXJfMToOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiKVRoZSBt%0AZWV0aW5nIHdhcyBjcmVhdGVkIHN1Y2Nlc3NmdWxseQY6CkB1c2VkewY7CVQ%3D--f371b6ff124805d7a6b0f0e2612d666c0983cb8e
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"meetings"}
+  [4;36;1mSQL (0.000519)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mUser Load (0.000274)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+  [4;36;1mMeeting Load (0.000250)[0m   [0;1mSELECT * FROM meetings WHERE (meetings."id" = 1) [0m
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/core.dryml in 0.01s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_support.dryml in 0.01s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_document_tags.dryml in 0.07s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml in 1.20s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_editing.dryml in 0.14s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_forms.dryml in 0.32s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_navigation.dryml in 0.09s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_plus.dryml in 0.07s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_generics.dryml in 0.24s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid.dryml in 2.63s
+  DRYML: Compiled (from cache) /app/views/taglibs/themes/clean/clean.dryml in 0.00s
+  DRYML: Compiled (from cache) /app/views/taglibs/application.dryml in 2.64s
+  DRYML: Compiled meetings/[tag-page] in 2.65s
+Completed in 2.73139 (0 reqs/sec) | Rendering: 2.71394 (99%) | DB: 0.00104 (0%) | 200 OK [http://localhost/meetings/1]
+
+
+Processing MeetingsController#index (for 127.0.0.1 at 2008-05-17 20:14:44) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlNjhiMWUyYjExZTMzODQ3ZDAzZDc5MGUwYzUwN2Y0%0AZmE6CXVzZXIiC3VzZXJfMToOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--d4d420d43daa1d17a1eba4d150f49ae8a05b0e3d
+  Parameters: {"action"=>"index", "controller"=>"meetings"}
+  [4;35;1mMeeting Load (0.000695)[0m   [0mSELECT * FROM meetings LIMIT 30 OFFSET 0[0m
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/core.dryml in 0.01s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_support.dryml in 0.03s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_document_tags.dryml in 0.09s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml in 1.08s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_editing.dryml in 0.15s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_forms.dryml in 0.24s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_navigation.dryml in 0.33s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_plus.dryml in 0.06s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_generics.dryml in 0.35s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid.dryml in 3.02s
+  DRYML: Compiled (from cache) /app/views/taglibs/themes/clean/clean.dryml in 0.00s
+  DRYML: Compiled (from cache) /app/views/taglibs/application.dryml in 3.02s
+  DRYML: Compiled meetings/[tag-page] in 3.04s
+  [4;36;1mSQL (0.014054)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mUser Load (0.000307)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Completed in 3.10254 (0 reqs/sec) | Rendering: 3.09302 (99%) | DB: 0.00069 (0%) | 200 OK [http://localhost/meetings]
+  [4;36;1mSQL (0.000628)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000337)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.010305)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000188)[0m   [0mSELECT * FROM schema_info[0m
+  [4;36;1mSQL (0.000052)[0m   [0;1mPRAGMA index_list(meetings)[0m
+  [4;35;1mSQL (0.000150)[0m   [0mSELECT * FROM schema_info[0m
+  [4;36;1mSQL (0.000052)[0m   [0;1mPRAGMA index_list(meetings)[0m
+  [4;36;1mSQL (0.000600)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000163)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000234)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000153)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to CreateMeetingAttendances (2)
+  [4;36;1mSQL (0.017398)[0m   [0;1mCREATE TABLE meeting_attendances ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "status" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL, "user_id" integer DEFAULT NULL, "meeting_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000886)[0m   [0mCREATE TEMPORARY TABLE altered_meetings ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "body" text DEFAULT NULL, "date" date DEFAULT NULL, "start_time" datetime DEFAULT NULL, "end_time" datetime DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.000051)[0m   [0;1mPRAGMA index_list(meetings)[0m
+  [4;35;1mSQL (0.000328)[0m   [0mDROP TABLE meetings[0m
+  [4;36;1mSQL (0.000199)[0m   [0;1mCREATE TABLE meetings ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "body" text DEFAULT NULL, "date" date DEFAULT NULL, "start_time" datetime DEFAULT NULL, "end_time" datetime DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000049)[0m   [0mPRAGMA index_list(altered_meetings)[0m
+  [4;36;1mSQL (0.000112)[0m   [0;1mDROP TABLE altered_meetings[0m
+  [4;35;1mSQL (0.000320)[0m   [0mCREATE TEMPORARY TABLE altered_meetings ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "body" text DEFAULT NULL, "date" date DEFAULT NULL, "start_time" datetime DEFAULT NULL, "end_time" datetime DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.000050)[0m   [0;1mPRAGMA index_list(meetings)[0m
+  [4;35;1mSQL (0.114324)[0m   [0mDROP TABLE meetings[0m
+  [4;36;1mSQL (0.000213)[0m   [0;1mCREATE TABLE meetings ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL, "body" text DEFAULT NULL, "date" date DEFAULT NULL, "start_time" datetime DEFAULT NULL, "end_time" datetime DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000049)[0m   [0mPRAGMA index_list(altered_meetings)[0m
+  [4;36;1mSQL (0.000137)[0m   [0;1mDROP TABLE altered_meetings[0m
+  [4;35;1mSQL (0.000901)[0m   [0mUPDATE schema_info SET version = 2[0m
+  [4;36;1mSQL (0.000194)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000283)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000052)[0m   [0;1mPRAGMA index_list(meeting_attendances)[0m
+  [4;35;1mSQL (0.000052)[0m   [0mPRAGMA index_list(meetings)[0m
+  [4;36;1mSQL (0.000051)[0m   [0;1mPRAGMA index_list(users)[0m
+  [4;36;1mSQL (0.000700)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing MeetingsController#index (for 127.0.0.1 at 2008-05-17 20:18:22) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlNjhiMWUyYjExZTMzODQ3ZDAzZDc5MGUwYzUwN2Y0%0AZmE6CXVzZXIiC3VzZXJfMToOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--d4d420d43daa1d17a1eba4d150f49ae8a05b0e3d
+  Parameters: {"action"=>"index", "controller"=>"meetings"}
+  [4;35;1mMeeting Load (0.000360)[0m   [0mSELECT * FROM meetings LIMIT 30 OFFSET 0[0m
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/core.dryml in 0.01s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_support.dryml in 0.02s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_document_tags.dryml in 0.26s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml in 0.85s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_editing.dryml in 0.15s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_forms.dryml in 0.35s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_navigation.dryml in 0.17s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_plus.dryml in 0.09s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_generics.dryml in 0.29s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid.dryml in 2.61s
+  DRYML: Compiled /app/views/taglibs/themes/clean/clean.dryml in 0.02s
+  DRYML: Compiled /app/views/taglibs/application.dryml in 2.63s
+  DRYML: Compiled meetings/[tag-page] in 2.64s
+  [4;36;1mUser Load (0.000343)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Completed in 2.67031 (0 reqs/sec) | Rendering: 2.66775 (99%) | DB: 0.00106 (0%) | 200 OK [http://localhost/meetings]
+
+
+Processing FrontController#index (for 127.0.0.1 at 2008-05-17 20:18:33) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlNjhiMWUyYjExZTMzODQ3ZDAzZDc5MGUwYzUwN2Y0%0AZmE6CXVzZXIiC3VzZXJfMToOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--d4d420d43daa1d17a1eba4d150f49ae8a05b0e3d
+  Parameters: {"action"=>"index", "controller"=>"front"}
+Rendering front/index
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/core.dryml in 0.01s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_support.dryml in 0.01s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_document_tags.dryml in 0.20s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml in 0.98s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_editing.dryml in 0.11s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_forms.dryml in 0.45s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_navigation.dryml in 0.13s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_plus.dryml in 0.06s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_generics.dryml in 0.20s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid.dryml in 2.45s
+  DRYML: Compiled (from cache) /app/views/taglibs/themes/clean/clean.dryml in 0.00s
+  DRYML: Compiled (from cache) /app/views/taglibs/application.dryml in 2.45s
+  DRYML: Compiled app/views/front/index.dryml in 2.47s
+  [4;35;1mSQL (0.000600)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mUser Load (0.000345)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+  [4;35;1mMeeting Load (0.000301)[0m   [0mSELECT * FROM meetings LIMIT 6[0m
+Completed in 2.60892 (0 reqs/sec) | Rendering: 2.60634 (99%) | DB: 0.00125 (0%) | 200 OK [http://localhost/]
+
+
+Processing FrontController#index (for 127.0.0.1 at 2008-05-17 20:18:35) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlNjhiMWUyYjExZTMzODQ3ZDAzZDc5MGUwYzUwN2Y0%0AZmE6CXVzZXIiC3VzZXJfMToOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--d4d420d43daa1d17a1eba4d150f49ae8a05b0e3d
+  Parameters: {"action"=>"index", "controller"=>"front"}
+Rendering front/index
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/core.dryml in 0.28s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_support.dryml in 0.01s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_document_tags.dryml in 0.03s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml in 1.04s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_editing.dryml in 0.18s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_forms.dryml in 0.36s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_navigation.dryml in 0.15s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_plus.dryml in 0.33s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_generics.dryml in 0.10s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid.dryml in 2.81s
+  DRYML: Compiled (from cache) /app/views/taglibs/themes/clean/clean.dryml in 0.00s
+  DRYML: Compiled (from cache) /app/views/taglibs/application.dryml in 2.82s
+  DRYML: Compiled (from cache) app/views/front/index.dryml in 3.10s
+  [4;36;1mSQL (0.000561)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mUser Load (0.000353)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+  [4;36;1mMeeting Load (0.000293)[0m   [0;1mSELECT * FROM meetings LIMIT 6[0m
+Completed in 3.36617 (0 reqs/sec) | Rendering: 3.36308 (99%) | DB: 0.00121 (0%) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.000699)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing FrontController#index (for 127.0.0.1 at 2008-05-17 20:19:12) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlNjhiMWUyYjExZTMzODQ3ZDAzZDc5MGUwYzUwN2Y0%0AZmE6CXVzZXIiC3VzZXJfMToOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--d4d420d43daa1d17a1eba4d150f49ae8a05b0e3d
+  Parameters: {"action"=>"index", "controller"=>"front"}
+Rendering front/index
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/core.dryml in 0.01s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_support.dryml in 0.14s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_document_tags.dryml in 0.15s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml in 0.69s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_editing.dryml in 0.14s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_forms.dryml in 0.26s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_navigation.dryml in 0.10s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_plus.dryml in 0.26s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_generics.dryml in 0.25s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid.dryml in 2.32s
+  DRYML: Compiled /app/views/taglibs/themes/clean/clean.dryml in 0.01s
+  DRYML: Compiled /app/views/taglibs/application.dryml in 2.33s
+  DRYML: Compiled app/views/front/index.dryml in 2.41s
+  [4;35;1mUser Load (0.000342)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+  [4;36;1mMeeting Load (0.000291)[0m   [0;1mSELECT * FROM meetings LIMIT 6[0m
+  [4;35;1mMeetingAttendance Load (0.000136)[0m   [0mSELECT * FROM meeting_attendances LIMIT 6[0m
+Completed in 2.44275 (0 reqs/sec) | Rendering: 2.44056 (99%) | DB: 0.00147 (0%) | 200 OK [http://localhost/]
+
+
+Processing MeetingAttendancesController#new (for 127.0.0.1 at 2008-05-17 20:19:36) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlNjhiMWUyYjExZTMzODQ3ZDAzZDc5MGUwYzUwN2Y0%0AZmE6CXVzZXIiC3VzZXJfMToOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--d4d420d43daa1d17a1eba4d150f49ae8a05b0e3d
+  Parameters: {"action"=>"new", "controller"=>"meeting_attendances"}
+  [4;36;1mSQL (0.000412)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mUser Load (0.000359)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/core.dryml in 0.01s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_support.dryml in 0.06s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_document_tags.dryml in 0.08s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml in 1.12s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_editing.dryml in 0.23s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_forms.dryml in 0.19s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_navigation.dryml in 0.31s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_plus.dryml in 0.17s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_generics.dryml in 0.10s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid.dryml in 2.66s
+  DRYML: Compiled (from cache) /app/views/taglibs/themes/clean/clean.dryml in 0.00s
+  DRYML: Compiled (from cache) /app/views/taglibs/application.dryml in 2.66s
+  DRYML: Compiled meeting_attendances/[tag-page] in 2.67s
+  [4;36;1mMeeting Load (0.000360)[0m   [0;1mSELECT * FROM meetings [0m
+  [4;35;1mUser Load (0.000301)[0m   [0mSELECT * FROM users [0m
+Completed in 2.88005 (0 reqs/sec) | Rendering: 2.86004 (99%) | DB: 0.00077 (0%) | 200 OK [http://localhost/meeting_attendances/new]
+
+
+Processing MeetingsController#index (for 127.0.0.1 at 2008-05-17 20:19:54) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlNjhiMWUyYjExZTMzODQ3ZDAzZDc5MGUwYzUwN2Y0%0AZmE6CXVzZXIiC3VzZXJfMToOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--d4d420d43daa1d17a1eba4d150f49ae8a05b0e3d
+  Parameters: {"action"=>"index", "controller"=>"meetings"}
+  [4;36;1mMeeting Load (0.000726)[0m   [0;1mSELECT * FROM meetings LIMIT 30 OFFSET 0[0m
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/core.dryml in 0.01s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_support.dryml in 0.03s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_document_tags.dryml in 0.04s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml in 1.13s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_editing.dryml in 0.21s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_forms.dryml in 0.31s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_navigation.dryml in 0.20s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_plus.dryml in 0.05s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_generics.dryml in 0.39s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid.dryml in 2.69s
+  DRYML: Compiled (from cache) /app/views/taglibs/themes/clean/clean.dryml in 0.00s
+  DRYML: Compiled (from cache) /app/views/taglibs/application.dryml in 2.69s
+  DRYML: Compiled meetings/[tag-page] in 2.70s
+  [4;35;1mSQL (0.000354)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mUser Load (0.000306)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Completed in 2.81016 (0 reqs/sec) | Rendering: 2.80708 (99%) | DB: 0.00073 (0%) | 200 OK [http://localhost/meetings]
+
+
+Processing MeetingsController#show (for 127.0.0.1 at 2008-05-17 20:20:00) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlNjhiMWUyYjExZTMzODQ3ZDAzZDc5MGUwYzUwN2Y0%0AZmE6CXVzZXIiC3VzZXJfMToOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--d4d420d43daa1d17a1eba4d150f49ae8a05b0e3d
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"meetings"}
+  [4;35;1mSQL (0.000540)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mUser Load (0.000264)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+  [4;35;1mMeeting Load (0.000246)[0m   [0mSELECT * FROM meetings WHERE (meetings."id" = 1) [0m
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/core.dryml in 0.02s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_support.dryml in 0.02s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_document_tags.dryml in 0.30s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml in 0.95s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_editing.dryml in 0.16s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_forms.dryml in 0.26s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_navigation.dryml in 0.05s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_plus.dryml in 0.05s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_generics.dryml in 0.29s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid.dryml in 2.51s
+  DRYML: Compiled (from cache) /app/views/taglibs/themes/clean/clean.dryml in 0.00s
+  DRYML: Compiled (from cache) /app/views/taglibs/application.dryml in 2.51s
+  DRYML: Compiled meetings/[tag-page] in 2.53s
+Completed in 2.60968 (0 reqs/sec) | Rendering: 2.59153 (99%) | DB: 0.00105 (0%) | 200 OK [http://localhost/meetings/1]
+
+
+Processing MeetingsController#edit (for 127.0.0.1 at 2008-05-17 20:20:12) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlNjhiMWUyYjExZTMzODQ3ZDAzZDc5MGUwYzUwN2Y0%0AZmE6CXVzZXIiC3VzZXJfMToOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--d4d420d43daa1d17a1eba4d150f49ae8a05b0e3d
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"meetings"}
+  [4;36;1mSQL (0.000549)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mUser Load (0.000280)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+  [4;36;1mMeeting Load (0.000250)[0m   [0;1mSELECT * FROM meetings WHERE (meetings."id" = 1) [0m
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/core.dryml in 0.09s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_support.dryml in 0.17s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_document_tags.dryml in 0.06s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml in 1.12s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_editing.dryml in 0.17s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_forms.dryml in 0.37s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_navigation.dryml in 0.13s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_plus.dryml in 0.09s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_generics.dryml in 0.28s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid.dryml in 2.93s
+  DRYML: Compiled (from cache) /app/views/taglibs/themes/clean/clean.dryml in 0.00s
+  DRYML: Compiled (from cache) /app/views/taglibs/application.dryml in 2.93s
+  DRYML: Compiled meetings/[tag-page] in 3.02s
+  [4;35;1mMeetingAttendance Load (0.000163)[0m   [0mSELECT * FROM meeting_attendances WHERE (meeting_attendances.meeting_id = 1) [0m
+
+
+ActiveRecord::HasManyThroughSourceAssociationNotFoundError (Could not find the source association(s) :attendee or :attendees in model MeetingAttendance.  Try 'has_many :attendees, :through => :meeting_attendances, :source => <name>'.  Is it one of :meeting or :user?):
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/reflection.rb:179:in `check_validity!'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/associations/has_many_through_association.rb:6:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/associations.rb:1032:in `new'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/associations.rb:1032:in `attendees'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo.rb:164:in `send'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo.rb:164:in `get_field'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo.rb:313:in `can_view?'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/hobo_helper.rb:223:in `can_view?'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_support.dryml:25:in `with_fields'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_support.dryml:25:in `select'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_support.dryml:25:in `with_fields'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_support.dryml:1:in `with_fields'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid.dryml:16:in `field_list'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid.dryml:15:in `field_list'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:313:in `call'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:313:in `call_tag_parameter_with_default_content'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/tag_parameters.rb:21:in `call'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/tag_parameters.rb:21:in `method_missing'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/core.dryml:39:in `do_'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/core.dryml:39:in `do_'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:317:in `send'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:317:in `call_tag_parameter_with_default_content'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:329:in `call_tag_parameter'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_document_tags.dryml:1:in `labelled_item_list'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_document_tags.dryml:1:in `labelled_item_list'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/tag_parameters.rb:21:in `call'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/tag_parameters.rb:21:in `method_missing'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid.dryml:56:in `table'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid.dryml:55:in `table'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/tag_parameters.rb:21:in `call'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/tag_parameters.rb:21:in `method_missing'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/core.dryml:45:in `if_'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/core.dryml:43:in `if_'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid.dryml:55:in `table'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid.dryml:54:in `table'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_document_tags.dryml:1:in `labelled_item_list'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_document_tags.dryml:1:in `labelled_item_list'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid.dryml:15:in `field_list'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid.dryml:13:in `field_list'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:389:in `send'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:389:in `override_and_call_tag'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:354:in `call_tag_parameter'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml:210:in `edit_page'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml:209:in `edit_page'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:383:in `call'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:383:in `override_and_call_tag'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/tag_parameters.rb:21:in `call'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/tag_parameters.rb:21:in `method_missing'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_forms.dryml:56:in `form'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:274:in `with_form_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_forms.dryml:56:in `form'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/scoped_variables.rb:20:in `new_scope'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_forms.dryml:54:in `form'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_forms.dryml:23:in `form'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:389:in `send'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:389:in `override_and_call_tag'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:354:in `call_tag_parameter'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml:209:in `edit_page'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml:207:in `edit_page'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:381:in `call'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:381:in `override_and_call_tag'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/tag_parameters.rb:21:in `call'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/tag_parameters.rb:21:in `method_missing'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_document_tags.dryml:26:in `section'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_document_tags.dryml:25:in `section'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:389:in `send'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:389:in `override_and_call_tag'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:354:in `call_tag_parameter'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml:41:in `simple_layout'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml:37:in `simple_layout'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:383:in `call'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:383:in `override_and_call_tag'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/tag_parameters.rb:21:in `call'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/tag_parameters.rb:21:in `method_missing'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_document_tags.dryml:26:in `section'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_document_tags.dryml:25:in `section'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:389:in `send'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:389:in `override_and_call_tag'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:354:in `call_tag_parameter'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml:37:in `simple_layout'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml:27:in `simple_layout'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:372:in `call'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:372:in `override_and_call_tag'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:372:in `override_and_call_tag'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:354:in `call_tag_parameter'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml:20:in `base_page'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml:1:in `base_page'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml:26:in `simple_layout'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml:25:in `simple_layout'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/core.dryml:2:in `send'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/core.dryml:2:in `call_tag'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/core.dryml:1:in `call_tag'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml:64:in `page_without_theme'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml:64:in `page_without_theme'
+    /app/views/taglibs/themes/clean/clean.dryml:2:in `page'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /app/views/taglibs/themes/clean/clean.dryml:1:in `page'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml:200:in `edit_page'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:263:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:235:in `new_object_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:232:in `new_object_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:263:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml:199:in `edit_page'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:455:in `send'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:455:in `render_tag'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml.rb:61:in `render_tag'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_handler.rb:53:in `call_dryml_tag'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_handler.rb:59:in `render_tag'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_handler.rb:69:in `render_for_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:914:in `render_with_no_layout'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:270:in `render_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render_without_hobo_model'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render_without_hobo_model'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/model_controller.rb:575:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1153:in `default_render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1159:in `perform_action_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing MeetingsController#edit (for 127.0.0.1 at 2008-05-17 20:20:45) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlNjhiMWUyYjExZTMzODQ3ZDAzZDc5MGUwYzUwN2Y0%0AZmE6CXVzZXIiC3VzZXJfMToOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--d4d420d43daa1d17a1eba4d150f49ae8a05b0e3d
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"meetings"}
+  [4;36;1mSQL (0.000547)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mUser Load (0.000276)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+  [4;36;1mMeeting Load (0.000246)[0m   [0;1mSELECT * FROM meetings WHERE (meetings."id" = 1) [0m
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/core.dryml in 0.09s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_support.dryml in 0.24s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_document_tags.dryml in 0.12s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml in 0.86s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_editing.dryml in 0.19s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_forms.dryml in 0.44s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_navigation.dryml in 0.08s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_plus.dryml in 0.35s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_generics.dryml in 0.09s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid.dryml in 2.59s
+  DRYML: Compiled (from cache) /app/views/taglibs/themes/clean/clean.dryml in 0.00s
+  DRYML: Compiled (from cache) /app/views/taglibs/application.dryml in 2.59s
+  DRYML: Compiled meetings/[tag-page] in 2.69s
+  [4;35;1mMeetingAttendance Load (0.000159)[0m   [0mSELECT * FROM meeting_attendances WHERE (meeting_attendances.meeting_id = 1) [0m
+
+
+ActiveRecord::HasManyThroughSourceAssociationNotFoundError (Could not find the source association(s) :attendee or :attendees in model MeetingAttendance.  Try 'has_many :attendees, :through => :meeting_attendances, :source => <name>'.  Is it one of :meeting or :user?):
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/reflection.rb:179:in `check_validity!'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/associations/has_many_through_association.rb:6:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/associations.rb:1032:in `new'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/associations.rb:1032:in `attendees'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo.rb:164:in `send'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo.rb:164:in `get_field'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo.rb:313:in `can_view?'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/hobo_helper.rb:223:in `can_view?'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_support.dryml:25:in `with_fields'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_support.dryml:25:in `select'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_support.dryml:25:in `with_fields'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_support.dryml:1:in `with_fields'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid.dryml:16:in `field_list'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid.dryml:15:in `field_list'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:313:in `call'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:313:in `call_tag_parameter_with_default_content'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/tag_parameters.rb:21:in `call'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/tag_parameters.rb:21:in `method_missing'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/core.dryml:39:in `do_'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/core.dryml:39:in `do_'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:317:in `send'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:317:in `call_tag_parameter_with_default_content'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:329:in `call_tag_parameter'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_document_tags.dryml:1:in `labelled_item_list'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_document_tags.dryml:1:in `labelled_item_list'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/tag_parameters.rb:21:in `call'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/tag_parameters.rb:21:in `method_missing'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid.dryml:56:in `table'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid.dryml:55:in `table'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/tag_parameters.rb:21:in `call'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/tag_parameters.rb:21:in `method_missing'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/core.dryml:45:in `if_'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/core.dryml:43:in `if_'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid.dryml:55:in `table'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid.dryml:54:in `table'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_document_tags.dryml:1:in `labelled_item_list'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_document_tags.dryml:1:in `labelled_item_list'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid.dryml:15:in `field_list'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid.dryml:13:in `field_list'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:389:in `send'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:389:in `override_and_call_tag'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:354:in `call_tag_parameter'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml:210:in `edit_page'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml:209:in `edit_page'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:383:in `call'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:383:in `override_and_call_tag'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/tag_parameters.rb:21:in `call'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/tag_parameters.rb:21:in `method_missing'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_forms.dryml:56:in `form'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:274:in `with_form_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_forms.dryml:56:in `form'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/scoped_variables.rb:20:in `new_scope'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_forms.dryml:54:in `form'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_forms.dryml:23:in `form'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:389:in `send'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:389:in `override_and_call_tag'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:354:in `call_tag_parameter'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml:209:in `edit_page'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml:207:in `edit_page'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:381:in `call'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:381:in `override_and_call_tag'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/tag_parameters.rb:21:in `call'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/tag_parameters.rb:21:in `method_missing'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_document_tags.dryml:26:in `section'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_document_tags.dryml:25:in `section'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:389:in `send'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:389:in `override_and_call_tag'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:354:in `call_tag_parameter'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml:41:in `simple_layout'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml:37:in `simple_layout'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:383:in `call'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:383:in `override_and_call_tag'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/tag_parameters.rb:21:in `call'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/tag_parameters.rb:21:in `method_missing'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_document_tags.dryml:26:in `section'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_document_tags.dryml:25:in `section'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:389:in `send'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:389:in `override_and_call_tag'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:354:in `call_tag_parameter'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml:37:in `simple_layout'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml:27:in `simple_layout'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:372:in `call'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:372:in `override_and_call_tag'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:372:in `override_and_call_tag'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:354:in `call_tag_parameter'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml:20:in `base_page'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml:1:in `base_page'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml:26:in `simple_layout'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml:25:in `simple_layout'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/core.dryml:2:in `send'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/core.dryml:2:in `call_tag'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/core.dryml:1:in `call_tag'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml:64:in `page_without_theme'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml:64:in `page_without_theme'
+    /app/views/taglibs/themes/clean/clean.dryml:2:in `page'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /app/views/taglibs/themes/clean/clean.dryml:1:in `page'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml:200:in `edit_page'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:263:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:235:in `new_object_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:232:in `new_object_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:263:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml:199:in `edit_page'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:455:in `send'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:455:in `render_tag'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml.rb:61:in `render_tag'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_handler.rb:53:in `call_dryml_tag'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_handler.rb:59:in `render_tag'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_handler.rb:69:in `render_for_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:914:in `render_with_no_layout'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:270:in `render_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render_without_hobo_model'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render_without_hobo_model'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/model_controller.rb:575:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1153:in `default_render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1159:in `perform_action_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+  [4;36;1mSQL (0.000739)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing MeetingsController#edit (for 127.0.0.1 at 2008-05-17 20:21:02) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlNjhiMWUyYjExZTMzODQ3ZDAzZDc5MGUwYzUwN2Y0%0AZmE6CXVzZXIiC3VzZXJfMToOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--d4d420d43daa1d17a1eba4d150f49ae8a05b0e3d
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"meetings"}
+  [4;35;1mUser Load (0.000364)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+  [4;36;1mMeeting Load (0.000261)[0m   [0;1mSELECT * FROM meetings WHERE (meetings."id" = 1) [0m
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/core.dryml in 0.01s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_support.dryml in 0.05s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_document_tags.dryml in 0.21s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml in 1.32s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_editing.dryml in 0.05s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_forms.dryml in 0.40s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_navigation.dryml in 0.15s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_plus.dryml in 0.08s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_generics.dryml in 0.34s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid.dryml in 2.95s
+  DRYML: Compiled /app/views/taglibs/themes/clean/clean.dryml in 0.04s
+  DRYML: Compiled /app/views/taglibs/application.dryml in 3.00s
+  DRYML: Compiled meetings/[tag-page] in 3.01s
+  [4;35;1mMeetingAttendance Load (0.000166)[0m   [0mSELECT * FROM meeting_attendances WHERE (meeting_attendances.meeting_id = 1) [0m
+
+
+ActiveRecord::HasManyThroughSourceAssociationNotFoundError (Could not find the source association(s) :attendee or :attendees in model MeetingAttendance.  Try 'has_many :attendees, :through => :meeting_attendances, :source => <name>'.  Is it one of :meeting or :user?):
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/reflection.rb:179:in `check_validity!'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/associations/has_many_through_association.rb:6:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/associations.rb:1032:in `new'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/associations.rb:1032:in `attendees'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo.rb:164:in `send'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo.rb:164:in `get_field'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo.rb:313:in `can_view?'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/hobo_helper.rb:223:in `can_view?'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_support.dryml:25:in `with_fields'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_support.dryml:25:in `select'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_support.dryml:25:in `with_fields'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_support.dryml:1:in `with_fields'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid.dryml:16:in `field_list'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid.dryml:15:in `field_list'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:313:in `call'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:313:in `call_tag_parameter_with_default_content'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/tag_parameters.rb:21:in `call'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/tag_parameters.rb:21:in `method_missing'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/core.dryml:39:in `do_'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/core.dryml:39:in `do_'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:317:in `send'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:317:in `call_tag_parameter_with_default_content'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:329:in `call_tag_parameter'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_document_tags.dryml:1:in `labelled_item_list'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_document_tags.dryml:1:in `labelled_item_list'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/tag_parameters.rb:21:in `call'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/tag_parameters.rb:21:in `method_missing'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid.dryml:56:in `table'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid.dryml:55:in `table'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/tag_parameters.rb:21:in `call'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/tag_parameters.rb:21:in `method_missing'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/core.dryml:45:in `if_'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/core.dryml:43:in `if_'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid.dryml:55:in `table'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid.dryml:54:in `table'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_document_tags.dryml:1:in `labelled_item_list'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_document_tags.dryml:1:in `labelled_item_list'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid.dryml:15:in `field_list'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid.dryml:13:in `field_list'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:389:in `send'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:389:in `override_and_call_tag'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:354:in `call_tag_parameter'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml:210:in `edit_page'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml:209:in `edit_page'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:383:in `call'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:383:in `override_and_call_tag'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/tag_parameters.rb:21:in `call'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/tag_parameters.rb:21:in `method_missing'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_forms.dryml:56:in `form'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:274:in `with_form_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_forms.dryml:56:in `form'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/scoped_variables.rb:20:in `new_scope'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_forms.dryml:54:in `form'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_forms.dryml:23:in `form'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:389:in `send'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:389:in `override_and_call_tag'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:354:in `call_tag_parameter'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml:209:in `edit_page'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml:207:in `edit_page'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:381:in `call'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:381:in `override_and_call_tag'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/tag_parameters.rb:21:in `call'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/tag_parameters.rb:21:in `method_missing'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_document_tags.dryml:26:in `section'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_document_tags.dryml:25:in `section'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:389:in `send'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:389:in `override_and_call_tag'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:354:in `call_tag_parameter'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml:41:in `simple_layout'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml:37:in `simple_layout'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:383:in `call'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:383:in `override_and_call_tag'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/tag_parameters.rb:21:in `call'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/tag_parameters.rb:21:in `method_missing'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_document_tags.dryml:26:in `section'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_document_tags.dryml:25:in `section'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:389:in `send'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:389:in `override_and_call_tag'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:354:in `call_tag_parameter'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml:37:in `simple_layout'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml:27:in `simple_layout'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:372:in `call'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:372:in `override_and_call_tag'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:372:in `override_and_call_tag'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:354:in `call_tag_parameter'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml:20:in `base_page'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml:1:in `base_page'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml:26:in `simple_layout'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml:25:in `simple_layout'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/core.dryml:2:in `send'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/core.dryml:2:in `call_tag'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/core.dryml:1:in `call_tag'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml:64:in `page_without_theme'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml:64:in `page_without_theme'
+    /app/views/taglibs/themes/clean/clean.dryml:2:in `page'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:265:in `_tag_context'
+    /app/views/taglibs/themes/clean/clean.dryml:1:in `page'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml:200:in `edit_page'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:263:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:235:in `new_object_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:225:in `new_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:232:in `new_object_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:263:in `_tag_context'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml:199:in `edit_page'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:455:in `send'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_environment.rb:455:in `render_tag'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml.rb:61:in `render_tag'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_handler.rb:53:in `call_dryml_tag'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_handler.rb:59:in `render_tag'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/dryml/template_handler.rb:69:in `render_for_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:914:in `render_with_no_layout'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:270:in `render_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render_without_hobo_model'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render_without_hobo_model'
+    /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/hobo/model_controller.rb:575:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1153:in `default_render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1159:in `perform_action_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing MeetingsController#edit (for 127.0.0.1 at 2008-05-17 20:21:46) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlNjhiMWUyYjExZTMzODQ3ZDAzZDc5MGUwYzUwN2Y0%0AZmE6CXVzZXIiC3VzZXJfMToOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--d4d420d43daa1d17a1eba4d150f49ae8a05b0e3d
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"meetings"}
+  [4;36;1mSQL (0.000572)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mUser Load (0.000285)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+  [4;36;1mMeeting Load (0.000303)[0m   [0;1mSELECT * FROM meetings WHERE (meetings."id" = 1) [0m
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/core.dryml in 0.01s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_support.dryml in 0.01s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_document_tags.dryml in 0.23s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml in 1.05s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_editing.dryml in 0.13s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_forms.dryml in 0.40s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_navigation.dryml in 0.05s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_plus.dryml in 0.07s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_generics.dryml in 0.36s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid.dryml in 2.67s
+  DRYML: Compiled (from cache) /app/views/taglibs/themes/clean/clean.dryml in 0.00s
+  DRYML: Compiled (from cache) /app/views/taglibs/application.dryml in 2.79s
+  DRYML: Compiled meetings/[tag-page] in 2.81s
+  [4;35;1mMeetingAttendance Load (0.000183)[0m   [0mSELECT * FROM meeting_attendances WHERE (meeting_attendances.meeting_id = 1) [0m
+  [4;36;1mUser Load (0.000153)[0m   [0;1mSELECT users.* FROM users INNER JOIN meeting_attendances ON users.id = meeting_attendances.user_id WHERE ((meeting_attendances.meeting_id = 1)) [0m
+Completed in 3.08630 (0 reqs/sec) | Rendering: 3.06162 (99%) | DB: 0.00116 (0%) | 200 OK [http://localhost/meetings/1/edit]
+
+
+Processing MeetingsController#update (for 127.0.0.1 at 2008-05-17 20:21:55) [PUT]
+  Session ID: BAh7CToMY3NyZl9pZCIlNjhiMWUyYjExZTMzODQ3ZDAzZDc5MGUwYzUwN2Y0%0AZmE6CXVzZXIiC3VzZXJfMToOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--d4d420d43daa1d17a1eba4d150f49ae8a05b0e3d
+  Parameters: {"page_path"=>"meetings/edit", "authenticity_token"=>"9d9bee838232dc3688d1e1002b93b2cda434f4a1", "_method"=>"PUT", "action"=>"update", "meeting"=>{"title"=>"Brisbane Ruby meeting", "body"=>"Sessions:\r\n\r\n* Hobo by Dr Nic\r\n* ...", "date"=>{"month"=>"5", "day"=>"17", "year"=>"2008"}, "start_time"=>{"month"=>"5", "minute"=>"14", "hour"=>"20", "day"=>"17", "year"=>"2008"}, "end_time"=>{"month"=>"5", "minute"=>"14", "hour"=>"20", "day"=>"17", "year"=>"2008"}}, "id"=>"1", "controller"=>"meetings"}
+  [4;35;1mSQL (0.000808)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mUser Load (0.000387)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+  [4;35;1mMeeting Load (0.000298)[0m   [0mSELECT * FROM meetings WHERE (meetings."id" = 1) [0m
+  [4;36;1mMeeting Update (0.000456)[0m   [0;1mUPDATE meetings SET "start_time" = '2008-05-17 20:14:00', "created_at" = '2008-05-17 20:14:35', "title" = 'Brisbane Ruby meeting', "date" = '2008-05-17', "end_time" = '2008-05-17 20:14:00', "body" = 'Sessions:
+
+* Hobo by Dr Nic
+* ...', "updated_at" = '2008-05-17 20:21:55' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/meetings/1
+Completed in 0.02461 (40 reqs/sec) | DB: 0.00195 (7%) | 302 Found [http://localhost/meetings/1]
+
+
+Processing MeetingsController#show (for 127.0.0.1 at 2008-05-17 20:21:55) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlNjhiMWUyYjExZTMzODQ3ZDAzZDc5MGUwYzUwN2Y0%0AZmE6CXVzZXIiC3VzZXJfMToOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiJkNoYW5n%0AZXMgdG8gdGhlIG1lZXRpbmcgd2VyZSBzYXZlZAY6CkB1c2VkewY7CVQ%3D--0dc7c391610c39ba1c8fd0601972af49e5fc33e5
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"meetings"}
+  [4;35;1mSQL (0.000583)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mUser Load (0.000288)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+  [4;35;1mMeeting Load (0.000248)[0m   [0mSELECT * FROM meetings WHERE (meetings."id" = 1) [0m
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/core.dryml in 0.01s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_support.dryml in 0.01s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_document_tags.dryml in 0.27s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml in 0.85s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_editing.dryml in 0.17s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_forms.dryml in 0.27s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_navigation.dryml in 0.23s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_plus.dryml in 0.10s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_generics.dryml in 0.29s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid.dryml in 2.68s
+  DRYML: Compiled (from cache) /app/views/taglibs/themes/clean/clean.dryml in 0.00s
+  DRYML: Compiled (from cache) /app/views/taglibs/application.dryml in 2.68s
+  DRYML: Compiled meetings/[tag-page] in 2.70s
+Completed in 2.76282 (0 reqs/sec) | Rendering: 2.74470 (99%) | DB: 0.00112 (0%) | 200 OK [http://localhost/meetings/1]
+
+
+Processing MeetingAttendancesController#index (for 127.0.0.1 at 2008-05-17 20:22:13) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlNjhiMWUyYjExZTMzODQ3ZDAzZDc5MGUwYzUwN2Y0%0AZmE6CXVzZXIiC3VzZXJfMToOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--d4d420d43daa1d17a1eba4d150f49ae8a05b0e3d
+  Parameters: {"action"=>"index", "controller"=>"meeting_attendances"}
+  [4;36;1mMeetingAttendance Load (0.000360)[0m   [0;1mSELECT * FROM meeting_attendances LIMIT 30 OFFSET 0[0m
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/core.dryml in 0.01s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_support.dryml in 0.04s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_document_tags.dryml in 0.32s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml in 0.86s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_editing.dryml in 0.06s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_forms.dryml in 0.50s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_navigation.dryml in 0.11s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_plus.dryml in 0.08s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_generics.dryml in 0.36s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid.dryml in 2.72s
+  DRYML: Compiled (from cache) /app/views/taglibs/themes/clean/clean.dryml in 0.00s
+  DRYML: Compiled (from cache) /app/views/taglibs/application.dryml in 2.72s
+  DRYML: Compiled meeting_attendances/[tag-page] in 2.74s
+  [4;35;1mSQL (0.000355)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mUser Load (0.000338)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Completed in 2.88962 (0 reqs/sec) | Rendering: 2.88689 (99%) | DB: 0.00036 (0%) | 200 OK [http://localhost/meeting_attendances]
+
+
+Processing MeetingsController#index (for 127.0.0.1 at 2008-05-17 20:22:16) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlNjhiMWUyYjExZTMzODQ3ZDAzZDc5MGUwYzUwN2Y0%0AZmE6CXVzZXIiC3VzZXJfMToOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--d4d420d43daa1d17a1eba4d150f49ae8a05b0e3d
+  Parameters: {"action"=>"index", "controller"=>"meetings"}
+  [4;35;1mMeeting Load (0.000521)[0m   [0mSELECT * FROM meetings LIMIT 30 OFFSET 0[0m
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/core.dryml in 0.01s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_support.dryml in 0.02s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_document_tags.dryml in 0.15s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml in 0.94s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_editing.dryml in 0.23s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_forms.dryml in 0.25s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_navigation.dryml in 0.19s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_plus.dryml in 0.25s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_generics.dryml in 0.15s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid.dryml in 2.64s
+  DRYML: Compiled (from cache) /app/views/taglibs/themes/clean/clean.dryml in 0.00s
+  DRYML: Compiled (from cache) /app/views/taglibs/application.dryml in 2.65s
+  DRYML: Compiled meetings/[tag-page] in 2.66s
+  [4;36;1mSQL (0.000407)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mUser Load (0.000603)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Completed in 2.71715 (0 reqs/sec) | Rendering: 2.71347 (99%) | DB: 0.00052 (0%) | 200 OK [http://localhost/meetings]
+
+
+Processing MeetingsController#show (for 127.0.0.1 at 2008-05-17 20:22:43) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlNjhiMWUyYjExZTMzODQ3ZDAzZDc5MGUwYzUwN2Y0%0AZmE6CXVzZXIiC3VzZXJfMToOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--d4d420d43daa1d17a1eba4d150f49ae8a05b0e3d
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"meetings"}
+  [4;36;1mSQL (0.000674)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mUser Load (0.000309)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+  [4;36;1mMeeting Load (0.000258)[0m   [0;1mSELECT * FROM meetings WHERE (meetings."id" = 1) [0m
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/core.dryml in 0.06s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_support.dryml in 0.04s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_document_tags.dryml in 0.31s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml in 0.78s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_editing.dryml in 0.25s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_forms.dryml in 0.17s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_navigation.dryml in 0.44s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_plus.dryml in 0.12s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_generics.dryml in 0.09s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid.dryml in 2.75s
+  DRYML: Compiled (from cache) /app/views/taglibs/themes/clean/clean.dryml in 0.00s
+  DRYML: Compiled (from cache) /app/views/taglibs/application.dryml in 2.75s
+  DRYML: Compiled meetings/[tag-page] in 2.82s
+Completed in 3.00079 (0 reqs/sec) | Rendering: 2.98003 (99%) | DB: 0.00124 (0%) | 200 OK [http://localhost/meetings/1]
+
+
+Processing MeetingsController#show (for 127.0.0.1 at 2008-05-17 20:25:00) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlNjhiMWUyYjExZTMzODQ3ZDAzZDc5MGUwYzUwN2Y0%0AZmE6CXVzZXIiC3VzZXJfMToOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--d4d420d43daa1d17a1eba4d150f49ae8a05b0e3d
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"meetings"}
+  [4;35;1mSQL (0.001277)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mUser Load (0.000301)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+  [4;35;1mMeeting Load (0.000248)[0m   [0mSELECT * FROM meetings WHERE (meetings."id" = 1) [0m
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/core.dryml in 0.02s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_support.dryml in 0.02s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_document_tags.dryml in 0.07s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml in 1.01s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_editing.dryml in 0.34s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_forms.dryml in 0.16s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_navigation.dryml in 0.36s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_plus.dryml in 0.09s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_generics.dryml in 0.32s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid.dryml in 2.85s
+  DRYML: Compiled (from cache) /app/views/taglibs/themes/clean/clean.dryml in 0.00s
+  DRYML: Compiled (from cache) /app/views/taglibs/application.dryml in 2.85s
+  DRYML: Compiled meetings/[tag-page] in 2.89s
+Completed in 2.96649 (0 reqs/sec) | Rendering: 2.94684 (99%) | DB: 0.00183 (0%) | 200 OK [http://localhost/meetings/1]
+  [4;36;1mSQL (0.000642)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing MeetingsController#show (for 127.0.0.1 at 2008-05-17 20:27:24) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlNjhiMWUyYjExZTMzODQ3ZDAzZDc5MGUwYzUwN2Y0%0AZmE6CXVzZXIiC3VzZXJfMToOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--d4d420d43daa1d17a1eba4d150f49ae8a05b0e3d
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"meetings"}
+  [4;35;1mUser Load (0.000361)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+  [4;36;1mMeeting Load (0.000253)[0m   [0;1mSELECT * FROM meetings WHERE (meetings."id" = 1) [0m
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/core.dryml in 0.02s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_support.dryml in 0.01s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_document_tags.dryml in 0.29s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml in 0.87s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_editing.dryml in 0.19s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_forms.dryml in 0.28s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_navigation.dryml in 0.05s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_plus.dryml in 0.18s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_generics.dryml in 0.27s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid.dryml in 2.79s
+  DRYML: Compiled /app/views/taglibs/themes/clean/clean.dryml in 0.03s
+  DRYML: Compiled /app/views/taglibs/application.dryml in 2.82s
+  DRYML: Compiled meetings/[tag-page] in 2.84s
+Completed in 2.90615 (0 reqs/sec) | Rendering: 2.90022 (99%) | DB: 0.00126 (0%) | 200 OK [http://localhost/meetings/1]
+
+
+Processing MeetingsController#show (for 127.0.0.1 at 2008-05-17 20:27:59) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlNjhiMWUyYjExZTMzODQ3ZDAzZDc5MGUwYzUwN2Y0%0AZmE6CXVzZXIiC3VzZXJfMToOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--d4d420d43daa1d17a1eba4d150f49ae8a05b0e3d
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"meetings"}
+  [4;35;1mSQL (0.000573)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mUser Load (0.000368)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+  [4;35;1mMeeting Load (0.000286)[0m   [0mSELECT * FROM meetings WHERE (meetings."id" = 1) [0m
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/core.dryml in 0.01s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_support.dryml in 0.03s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_document_tags.dryml in 0.08s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml in 1.01s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_editing.dryml in 0.19s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_forms.dryml in 0.37s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_navigation.dryml in 0.13s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_plus.dryml in 0.24s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_generics.dryml in 0.15s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid.dryml in 2.74s
+  DRYML: Compiled (from cache) /app/views/taglibs/themes/clean/clean.dryml in 0.00s
+  DRYML: Compiled (from cache) /app/views/taglibs/application.dryml in 2.75s
+  DRYML: Compiled meetings/[tag-page] in 2.76s
+Completed in 3.01962 (0 reqs/sec) | Rendering: 2.98277 (98%) | DB: 0.00123 (0%) | 200 OK [http://localhost/meetings/1]
+
+
+Processing MeetingsController#show (for 127.0.0.1 at 2008-05-17 20:28:43) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlNjhiMWUyYjExZTMzODQ3ZDAzZDc5MGUwYzUwN2Y0%0AZmE6CXVzZXIiC3VzZXJfMToOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--d4d420d43daa1d17a1eba4d150f49ae8a05b0e3d
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"meetings"}
+  [4;36;1mSQL (0.000588)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mUser Load (0.000306)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+  [4;36;1mMeeting Load (0.000471)[0m   [0;1mSELECT * FROM meetings WHERE (meetings."id" = 1) [0m
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/core.dryml in 0.01s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_support.dryml in 0.02s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_document_tags.dryml in 0.06s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml in 1.13s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_editing.dryml in 0.28s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_forms.dryml in 0.23s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_navigation.dryml in 0.34s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_plus.dryml in 0.06s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_generics.dryml in 0.23s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid.dryml in 2.78s
+  DRYML: Compiled (from cache) /app/views/taglibs/themes/clean/clean.dryml in 0.00s
+  DRYML: Compiled (from cache) /app/views/taglibs/application.dryml in 2.79s
+  DRYML: Compiled meetings/[tag-page] in 2.80s
+Completed in 3.14466 (0 reqs/sec) | Rendering: 3.11287 (98%) | DB: 0.00136 (0%) | 200 OK [http://localhost/meetings/1]

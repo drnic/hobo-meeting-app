@@ -1,0 +1,2 @@
+module MeetingAttendancesHelper
+end
