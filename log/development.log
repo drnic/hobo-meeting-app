@@ -1,0 +1,29 @@
+  [4;36;1mSQL (0.000750)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing MeetingsController#show (for 127.0.0.1 at 2008-05-17 20:50:01) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlNjhiMWUyYjExZTMzODQ3ZDAzZDc5MGUwYzUwN2Y0%0AZmE6CXVzZXIiC3VzZXJfMToOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--d4d420d43daa1d17a1eba4d150f49ae8a05b0e3d
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"meetings"}
+  [4;35;1mSQL (0.000568)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mUser Load (0.000353)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+  [4;35;1mMeeting Load (0.000259)[0m   [0mSELECT * FROM meetings WHERE (meetings."id" = 1) [0m
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/core.dryml in 0.01s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_support.dryml in 0.02s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_document_tags.dryml in 0.07s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_pages.dryml in 0.62s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_editing.dryml in 0.07s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_forms.dryml in 0.27s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_navigation.dryml in 0.06s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_plus.dryml in 0.11s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid_generics.dryml in 0.10s
+  DRYML: Compiled /Library/Ruby/Gems/1.8/gems/hobo-0.7.5/lib/../taglibs/rapid.dryml in 1.59s
+  DRYML: Compiled (from cache) /app/views/taglibs/themes/clean/clean.dryml in 0.01s
+  DRYML: Compiled (from cache) /app/views/taglibs/application.dryml in 1.60s
+  DRYML: Compiled meetings/[tag-page] in 1.61s
+Completed in 1.82138 (0 reqs/sec) | Rendering: 1.77538 (97%) | DB: 0.00118 (0%) | 200 OK [http://localhost/meetings/1]

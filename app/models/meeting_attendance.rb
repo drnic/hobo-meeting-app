@@ -13,7 +13,7 @@ class MeetingAttendance < ActiveRecord::Base
   # --- Hobo Permissions --- #
 
   def creatable_by?(user)
-    !guest? #user.administrator?
+    !user.guest? #user.administrator?
   end
 
   def updatable_by?(user, new)
