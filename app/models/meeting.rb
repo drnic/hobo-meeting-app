@@ -12,12 +12,15 @@ class Meeting < ActiveRecord::Base
   end
 
   has_many :meeting_attendances, :dependent => :destroy
-  has_many :attendees, :through => :meeting_attendances, :source => :user, :managed => true
+  has_many :users, :through => :meeting_attendances, :source => :user, :managed => true
+
+  belongs_to :user, :creator => true
+
 
   # --- Hobo Permissions --- #
 
   def creatable_by?(user)
-    user.administrator?
+    !user.guest?
   end
 
   def updatable_by?(user, new)

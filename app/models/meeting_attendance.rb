@@ -7,13 +7,13 @@ class MeetingAttendance < ActiveRecord::Base
     timestamps
   end
 
-  belongs_to :user
+  belongs_to :user, :creator => true
   belongs_to :meeting
 
   # --- Hobo Permissions --- #
 
   def creatable_by?(user)
-    !user.guest? #user.administrator?
+    !user.guest?
   end
 
   def updatable_by?(user, new)
