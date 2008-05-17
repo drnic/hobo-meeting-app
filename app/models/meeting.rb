@@ -4,10 +4,10 @@ class Meeting < ActiveRecord::Base
 
   fields do
     title :string
-    body :text
+    body :textile
     date :date
-    start_time :time
-    end_time :time
+    start_time :datetime
+    end_time :datetime
     timestamps
   end
 
